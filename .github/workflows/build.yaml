@@ -21,17 +21,17 @@ jobs:
           cache-dependency-path: react-demo/package-lock.json
 
       - name: Install dependencies
-        working-directory: "react-demo"
         if: steps.gimme_cache.outputs.cache-hit == false
         run: npm install
+        working-directory: "react-demo"
 
       - name: Build 🔧
-        working-directory: "react-demo"
         run: npm run build
+        working-directory: "react-demo"
 
       - name: Deploy 🚀
-        working-directory: "react-demo"
         uses: JamesIves/github-pages-deploy-action@v4.3.0
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: dist # The folder the action should deploy.
+        working-directory: "react-demo"
