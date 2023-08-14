@@ -31,6 +31,9 @@
   "include": [
     "src"
   ],
+  "exclude": [
+    "../src/inlineSuggestion.ts"
+  ],
   "references": [
     {
       "path": "./tsconfig.node.json"
