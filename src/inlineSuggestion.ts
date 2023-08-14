@@ -35,17 +35,6 @@ export interface InlineSuggestionStorage {
   };
 }
 
-const chunkString = (str: string): string[] => {
-  const words = str.split(" ");
-  const chunks = [];
-
-  for (let i = 0; i < words.length; i += 5) {
-    chunks.push(words.slice(i, i + 5).join(" "));
-  }
-
-  return chunks;
-};
-
 export const InlineSuggestion = Extension.create<
   InlineSuggestionOptions,
   InlineSuggestionStorage
@@ -54,7 +43,7 @@ export const InlineSuggestion = Extension.create<
 
   addOptions() {
     return {
-      fetchAutocompletion: async (existingText: string) => {
+      fetchAutocompletion: async () => {
         const message =
           "[@sereneinserenade/tiptap-inline-suggestions] Please add a fetchSuggestion function to fetch suggestions from.";
 
@@ -80,7 +69,7 @@ export const InlineSuggestion = Extension.create<
             return chain()
               .command(() => {
                 const chunkifiedSuggestion =
-                  this.storage.data.currentSuggestion.split("");
+                  this.storage.data.currentSuggestion!.split("");
 
                 this.storage.data = {};
 
@@ -166,7 +155,7 @@ export const InlineSuggestion = Extension.create<
           decorations(state) {
             return this.getState(state);
           },
-          handleKeyDown(view, event) {
+          handleKeyDown(_, event) {
             if (event.key === "Tab") {
               event.preventDefault();
 
