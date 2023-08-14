@@ -5,6 +5,7 @@ const sourcemaps = require("rollup-plugin-sourcemaps");
 const commonjs = require("@rollup/plugin-commonjs");
 const babel = require("@rollup/plugin-babel");
 const typescript = require("rollup-plugin-typescript2");
+const license = require("rollup-plugin-license");
 
 const config = {
   input: "src/index.ts",
@@ -28,6 +29,13 @@ const config = {
     babel(),
     commonjs(),
     typescript(),
+    license({
+      banner: {
+        content: {
+          file: "./LICENSE",
+        },
+      },
+    }),
   ],
 };
 

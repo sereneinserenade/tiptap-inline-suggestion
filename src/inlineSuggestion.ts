@@ -18,6 +18,9 @@ export const inlineSuggestionPluginKey = new PluginKey("inlineSuggestion");
 export interface InlineSuggestionOptions {
   /**
    * fetch inline suggestions
+   * 
+   * @param existingText -  existing text in the node
+   * @returns {string} - the suggestion to be shown
    */
   fetchAutocompletion: (existingText: string) => Promise<string>;
 }
@@ -101,10 +104,8 @@ export const InlineSuggestion = Extension.create<
           const { $from } = state.selection;
 
           const node = $from.parent;
-          const [from, to] = [
-            $from.start($from.depth - 1),
-            $from.end($from.depth - 1),
-          ];
+
+          const [from, to] = [$from.start() - 1, $from.end() + 1];
 
           const existingText = node.textContent;
 

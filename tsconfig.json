@@ -14,6 +14,7 @@
   "exclude": [
     "node_modules",
     "react-demo",
-    "vue-demo"
+    "vue-demo",
+    "assets",
   ]
 }

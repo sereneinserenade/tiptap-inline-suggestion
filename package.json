@@ -1,6 +1,6 @@
 {
   "name": "@sereneinserenade/tiptap-inline-suggestion",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
@@ -17,6 +17,7 @@
     "@tiptap/pm": "^2.0.4",
     "rollup": "^3.28.0",
     "rollup-plugin-auto-external": "^2.0.0",
+    "rollup-plugin-license": "^3.0.1",
     "rollup-plugin-sourcemaps": "^0.6.3",
     "rollup-plugin-typescript2": "^0.35.0",
     "typescript": "^4.9.5"
