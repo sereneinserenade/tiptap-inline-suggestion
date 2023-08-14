@@ -14,17 +14,12 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Setup Node 16
+        working-directory: 'react-demo'
         uses: actions/setup-node@v3
         with:
           node-version: '16'
-
-      - name: Gimme node_modules Cache
-        working-directory: 'react-demo'
-        uses: actions/cache@v3
-        id: gimme_cache
-        with:
-          path: '**/node_modules'
-          key: ${{ runner.os }}-modules-${{ hashFiles('**/package-lock.json') }}
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
 
       - name: Install dependencies
         working-directory: 'react-demo'
