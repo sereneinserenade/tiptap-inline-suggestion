@@ -25,11 +25,11 @@ jobs:
       - name: Install dependencies
         if: steps.gimme_cache.outputs.cache-hit == false
         run: npm install
-        working-directory: ${{env.working-director}}
+        working-directory: ${{env.working-directory}}
 
       - name: Build 🔧
         run: npm run build
-        working-directory: ${{env.working-director}}
+        working-directory: ${{env.working-directory}}
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.0
