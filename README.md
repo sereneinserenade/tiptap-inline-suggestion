@@ -7,7 +7,7 @@ A tiptap extension that allows you to add inline suggestions to your editor.
 <details open>
 <summary> Video Demo </summary>
 
-https://github.com/sereneinserenade/tiptap-inline-suggestion/assets/45892659/1174060e-6f7d-4df5-a228-d428caa2b9e1
+https://github.com/sereneinserenade/tiptap-inline-suggestion/assets/45892659/b69efd59-f853-4c03-9a03-85044e43f58a
 
 </details>
 
