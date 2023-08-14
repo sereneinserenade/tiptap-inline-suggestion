@@ -1,9 +1,9 @@
 import { useEditor, EditorContent } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
 import Link from '@tiptap/extension-link'
+import InlineSuggestion from '@sereneinserenade/tiptap-inline-suggestion'
 
 import { initContent } from './initContent'
-import { InlineSuggestion } from '../../../src'
 
 import './tiptap.css'
 
