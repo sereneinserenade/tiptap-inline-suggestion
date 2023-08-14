@@ -2,12 +2,12 @@
 
 A tiptap extension that allows you to add inline suggestions to your editor.
 
-**Demo**: https://sereneinserenade.github.io/tiptap-inline-suggestion/
+**Live Demo**: https://sereneinserenade.github.io/tiptap-inline-suggestion/
 
 <details open>
-<summary> : click to see </summary>
+<summary> Video Demo </summary>
 
-[Title](assets/demo.mov)
+https://github.com/sereneinserenade/tiptap-inline-suggestion/assets/45892659/1174060e-6f7d-4df5-a228-d428caa2b9e1
 
 </details>
 
