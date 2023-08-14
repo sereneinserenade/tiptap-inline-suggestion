@@ -1,4 +1,0 @@
-[data-inline-suggestion]::after {
-  content: attr(data-inline-suggestion);
-  color: #999;
-}
