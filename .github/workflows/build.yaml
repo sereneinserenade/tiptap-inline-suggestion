@@ -13,13 +13,13 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
 
-      - name: Setup Node 18
+      - name: Setup Node 16
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '16'
 
       - name: Gimme node_modules Cache
-        working-directory: react-demo
+        working-directory: 'react-demo'
         uses: actions/cache@v3
         id: gimme_cache
         with:
@@ -27,16 +27,16 @@ jobs:
           key: ${{ runner.os }}-modules-${{ hashFiles('**/package-lock.json') }}
 
       - name: Install dependencies
-        working-directory: react-demo
+        working-directory: 'react-demo'
         if: steps.gimme_cache.outputs.cache-hit == false
         run: npm install
 
       - name: Build 🔧
-        working-directory: react-demo
+        working-directory: 'react-demo'
         run: npm run build
 
       - name: Deploy 🚀
-        working-directory: react-demo
+        working-directory: 'react-demo'
         uses: JamesIves/github-pages-deploy-action@v4.3.0
         with:
           branch: gh-pages # The branch the action should deploy to.
