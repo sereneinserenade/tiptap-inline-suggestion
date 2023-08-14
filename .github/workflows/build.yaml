@@ -35,5 +35,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.3.0
         with:
           branch: gh-pages # The branch the action should deploy to.
-          folder: dist # The folder the action should deploy.
-        working-directory: ${{env.working-director}}
+          folder: ./react-demo/dist # The folder the action should deploy.
