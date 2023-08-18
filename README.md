@@ -1,5 +1,7 @@
 # InlineSuggestion
 
+![npm downloads](https://img.shields.io/npm/dt/%40sereneinserenade%2Ftiptap-inline-suggestion?style=for-the-badge&logo=npm&color=black)
+
 A tiptap extension that allows you to add inline suggestions to your editor.
 
 **Live Demo**: https://sereneinserenade.github.io/tiptap-inline-suggestion/
