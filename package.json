@@ -1,16 +1,24 @@
 {
   "name": "@sereneinserenade/tiptap-inline-suggestion",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Tiptap Extension for adding inline suggestions. Ex. for AI autocompletion.",
-  "keywords": ["tiptap", "tiptap-extension", "wysiwyg", "text editor", "inline suggestion", "ai-autocompletion", "prosemirror"],
+  "keywords": [
+    "tiptap",
+    "tiptap-extension",
+    "wysiwyg",
+    "text editor",
+    "inline suggestion",
+    "ai-autocompletion",
+    "prosemirror"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/sereneinserenade/tiptap-inline-suggestion/"
   },
   "author": "Jeet Mandaliya (github: sereneinserenade)",
   "funding": {
-    "type" : "individual",
-    "url" : "https://github.com/sponsors/sereneinserenade"
+    "type": "individual",
+    "url": "https://github.com/sponsors/sereneinserenade"
   },
   "license": "MIT",
   "main": "dist/index.cjs.js",
