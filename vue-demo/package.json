@@ -9,10 +9,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@sereneinserenade/tiptap-inline-suggestion": "^0.0.2",
+    "@tiptap/extension-link": "^2.1.2",
+    "@tiptap/pm": "^2.1.2",
+    "@tiptap/starter-kit": "^2.1.2",
+    "@tiptap/vue-3": "^2.1.2",
     "vue": "^3.3.4"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
     "@vitejs/plugin-vue": "^4.2.3",
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.28",
+    "tailwindcss": "^3.3.3",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
     "vue-tsc": "^1.8.5"
