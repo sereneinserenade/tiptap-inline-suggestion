@@ -1,2 +1,7 @@
-export { InlineSuggestion } from './inlineSuggestion'
-export { InlineSuggestion as default } from './inlineSuggestion'
+export { InlineSuggestion, InlineSuggestion as default, inlineSuggestionPluginKey } from "./inlineSuggestion";
+
+export type {
+  InlineSuggestionOptions,
+  InlineSuggestionStorage
+} from "./inlineSuggestion";
+
