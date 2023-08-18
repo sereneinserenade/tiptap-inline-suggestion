@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@sereneinserenade/tiptap-inline-suggestion": "^0.0.1",
+    "@sereneinserenade/tiptap-inline-suggestion": "^0.0.2",
     "@tiptap/extension-link": "^2.0.4",
     "@tiptap/pm": "^2.0.4",
     "@tiptap/react": "^2.0.4",
